@@ -1,5 +1,13 @@
-from keras.models import load_model
+import PIL
+from PIL import Image
+
+import numpy as np
+import matplotlib.pyplot as plt
+
 import os
+
+from keras.models import load_model
+from keras.preprocessing.image import img_to_array
 
 model = load_model('top_model.keras')
 
